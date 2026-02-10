@@ -1,1 +1,13 @@
 project_id = "ezoxrxtifxlbkkymphca"
+
+[functions.generate-post]
+verify_jwt = false
+
+[functions.generate-poster]
+verify_jwt = false
+
+[functions.send-telegram]
+verify_jwt = false
+
+[functions.telegram-webhook]
+verify_jwt = false
