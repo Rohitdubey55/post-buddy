@@ -14,7 +14,48 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      posts: {
+        Row: {
+          created_at: string
+          feedback: string | null
+          generated_post: string | null
+          id: string
+          input_image_url: string | null
+          input_text: string | null
+          post_status: string
+          poster_image_url: string | null
+          scheduled_at: string | null
+          telegram_group_id: string | null
+          updated_at: string
+        }
+        Insert: {
+          created_at?: string
+          feedback?: string | null
+          generated_post?: string | null
+          id?: string
+          input_image_url?: string | null
+          input_text?: string | null
+          post_status?: string
+          poster_image_url?: string | null
+          scheduled_at?: string | null
+          telegram_group_id?: string | null
+          updated_at?: string
+        }
+        Update: {
+          created_at?: string
+          feedback?: string | null
+          generated_post?: string | null
+          id?: string
+          input_image_url?: string | null
+          input_text?: string | null
+          post_status?: string
+          poster_image_url?: string | null
+          scheduled_at?: string | null
+          telegram_group_id?: string | null
+          updated_at?: string
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
